@@ -10,7 +10,7 @@ class AirportConnectivity:
         self.graph[from_airport].append(to_airport)
 
     def find_reachable(self, start: str) -> set:
-        """Finds all airports reachable from the starting airport using BFS."""
+        """Finds all airports reachable from the starting airport using Breadth First Search."""
         visited = set()  # To track visited airports
         queue = deque([start])  # Start Breath First Search from the given airport
 
